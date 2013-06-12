@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>REFGEN | REFormat GEne Names for Phylogenies</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="../refgen/css/refgen.css" />
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold,bolditalic' rel=
+  'stylesheet' type='text/css' />
+</head>
+
+<body>
+  <div class="title">
+    <span class="ref">REF</span><span class="gen">GEN</span> <img src=
+    "../refgen/css/refgen_title2.png" class="title" alt="REFGEN Logo" /><span class=
+    "subtitle">REFGEN - REFormat GEne Names for Phylogenies</span>
+  </div>
+
+  <div class="container">
+    <form enctype="multipart/form-data" method="post" action="/cgi-bin/refgen_1_beta.pl" id="form1"
+    name="form1">
+      <div class="six_hundred">
+        <fieldset>
+          <legend>1. Upload Fasta Sequences</legend> <label for="file">File to upload</label>
+          <input id="file" name="file" size="35" type="file" class="btn green" />
+        </fieldset>
+      </div>
+
+      <div class="column form">
+        <div class="three_hundred">
+          <fieldset class="two_a">
+            <legend>2a. Accession Information</legend>
+
+            <ol>
+              <li><label for="acclen" accesskey="a">Accession Length</label> <select id="acclen"
+              name="acclen" tabindex="1">
+                <option value="0">
+                  0
+                </option>
+
+                <option value="1">
+                  1
+                </option>
+
+                <option value="2">
+                  2
+                </option>
+
+                <option value="3">
+                  3
+                </option>
+
+                <option value="4">
+                  4
+                </option>
+
+                <option value="5" selected="selected">
+                  5
+                </option>
+
+                <option value="6">
+                  6
+                </option>
+
+                <option value="7">
+                  7
+                </option>
+
+                <option value="8">
+                  8
+                </option>
+
+                <option value="9">
+                  9
+                </option>
+
+                <option value="All">
+                  All
+                </option>
+              </select></li>
+            </ol>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="column form">
+        <div class="three_hundred">
+          <fieldset class="two_a">
+            <legend>2b. Accession Information</legend>
+
+            <ol>
+              <li>Starting Position<br />
+              <label><input id="head_tail_1" tabindex="2" name="head_tail" value="head" type=
+              "radio" /> Head</label> <label><input id="head_tail_2" tabindex="3" name="head_tail"
+              value="tail" checked="checked" type="radio" /> Tail</label></li>
+
+              <li>&nbsp;</li>
+
+              <li>NCBI Versions?<br />
+              <label><input disabled="disabled" id="remove_version_1" tabindex="4" name="version"
+              value="yes" type="radio" /> Yes</label> <label><input disabled="disabled" id=
+              "remove_version_2" tabindex="5" name="version" value="no" checked="checked" type=
+              "radio" /> No</label></li>
+            </ol>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="column form">
+        <div class="two_hundred">
+          <p class="help_text">
+          5 + Head:<br /><font color=
+                                        "#449E00">N</font><font color=
+                                        "#547F00">P</font>_<font color=
+                                        "#636000">1</font><font color=
+                                        "#734000">7</font><font color="#822100">9</font>750 =
+                                        <font color="#449E00">N</font><font color=
+                                        "#547F00">P</font><font color=
+                                        "#636000">1</font><font color="#734000">7</font><font color="#822100">9</font>
+          <br />5 + Tail:<br />AAB<font color="#920200">2</font><font color=
+                                        "#822100">8</font><font color=
+                                        "#734000">8</font><font color="#636000">8</font><font color="#547F00">0</font> 
+                                        = <font color="#920200">2</font><font color=
+                                        "#822100">8</font><font color=
+                                        "#734000">8</font><font color="#636000">8</font><font color="#547F00">0</font>
+          </p>
+        </div>
+      </div>
+
+      <div class="column form">
+        <div class="three_hundred">
+          <fieldset class="three">
+            <legend>3. Separator</legend>
+
+            <ol>
+              <li><label for="sep" accesskey="p">Separating Character</label> <input id="sep" size=
+              "5" tabindex="6" maxlength="5" name="sep" value="" type="text" /></li>
+            </ol>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="column form">
+        <div class="three_hundred">
+          <fieldset class="three">
+            <legend>4. Taxa Information</legend>
+
+            <ol>
+              <li><label for="species" accesskey="s" class="italics">Genus</label> <select id=
+              "species" name="species" tabindex="7">
+                <option value="0">
+                  0
+                </option>
+
+                <option value="1">
+                  1
+                </option>
+
+                <option value="2" selected="selected">
+                  2
+                </option>
+
+                <option value="3">
+                  3
+                </option>
+
+                <option value="4">
+                  4
+                </option>
+
+                <option value="5">
+                  5
+                </option>
+
+                <option value="6">
+                  6
+                </option>
+
+                <option value="7">
+                  7
+                </option>
+
+                <option value="8">
+                  8
+                </option>
+
+                <option value="9">
+                  9
+                </option>
+
+                <option value="All">
+                  All
+                </option>
+              </select> <label for="name" accesskey="s" class="italics">species</label> <select id=
+              "name" name="name" tabindex="8">
+                <option value="0">
+                  0
+                </option>
+
+                <option value="1">
+                  1
+                </option>
+
+                <option value="2" selected="selected">
+                  2
+                </option>
+
+                <option value="3">
+                  3
+                </option>
+
+                <option value="4">
+                  4
+                </option>
+
+                <option value="5">
+                  5
+                </option>
+
+                <option value="6">
+                  6
+                </option>
+
+                <option value="7">
+                  7
+                </option>
+
+                <option value="8">
+                  8
+                </option>
+
+                <option value="9">
+                  9
+                </option>
+
+                <option value="All">
+                  All
+                </option>
+              </select></li>
+            </ol>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="column form">
+        <div class="three_hundred">
+          <fieldset class="two_a">
+            <legend>5. Your Operating System</legend>
+
+            <ol>
+              <li>Please Choose:<br />
+              <label><input id="opsys_1" tabindex="9" name="opsys" value="win" type="radio" />
+              Windows</label><br />
+              <label><input id="opsys_2" tabindex="10" name="opsys" value="nix" checked="checked"
+              type="radio" /> Unix / Linux</label><br />
+              <label><input id="opsys_3" tabindex="11" name="opsys" value="mac" type="radio" />
+              Apple Mac</label></li>
+            </ol>
+          </fieldset>
+        </div>
+      </div><input name="stage" type="hidden" readonly="readonly" value="one" />
+
+      <div class="column form">
+        <div class="three_hundred">
+          <fieldset class="two_a">
+            <legend>6. Program Style</legend>
+
+            <ol>
+              <li>Please Choose:<br />
+              <label><input id="auto_1" tabindex="12" name="auto" value="yes" type="radio"
+              disabled="disabled" /> Automatic</label><br />
+              <label><input id="auto_2" tabindex="13" name="auto" value="no" checked="checked"
+              type="radio" /> Semi-automatic</label></li>
+            </ol>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="six_hundred">
+        <fieldset>
+          <legend>REFGEN!</legend> <input class="btn green" name="submit" value="REFGEN!" type=
+          "submit" />
+        </fieldset>
+      </div>
+
+      <div class="six_hundred">
+        <fieldset>
+          <legend>Information / Sample Data / Help</legend>
+
+          <ol>
+            <li>Instructions: <a href="refgen/how_to_refgen_old.pdf">download</a> and Sample
+            Dataset: <a href="refgen/refgen_sample_data.fasta">download</a></li>
+
+            <li>Citation: <a href=
+            "http://www.la-press.com/refgen-and-treenamer-automated-sequence-data-handling-for-phylogenetic-a1451">
+            Leonard, G., et al. (2009). REFGEN and TREENAMER: Automated Sequence Data Handling for
+            Phylogenetic Analysis in the Genomic Era. <em>Evolutionary Bioinformatics Online</em>,
+            5:1-4.</a></li>
+
+            <li><?php 
+                                               $file = "http://projects.ex.ac.uk/ceem/results/usage/refgen.txt";
+                                               $total_lines = count(file($file));
+                                               $file2 = fopen("http://projects.ex.ac.uk/ceem/results/usage/refgen.txt", "r") or exit("Unable to open file!");
+                                               //Output a line of the file until the end is reached
+                                               while(!feof($file2)) {
+                                                      $t = fgets($file2). "<br />";
+                                               }
+                                               #echo $t;
+                                               #list($date) = split("\t", $t, 1);
+                                               $date = split("\t", $t);
+                                               fclose($file2);         
+                                               echo "REFGEN has been used $total_lines times since Oct 2008 and was last used on $date[0].";
+                                         ?></li>
+
+            <li>
+              <!-- AddThis Button BEGIN -->
+              <script type="text/javascript">
+//<![CDATA[
+                                var addthis_pub="guyleonard";
+                                //]]>
+              </script> <a href="http://www.addthis.com/bookmark.php?v=20" onmouseover=
+              "return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()"
+              onclick="return addthis_sendto()"><img src=
+              "http://s7.addthis.com/static/btn/lg-bookmark-en.gif" width="125" height="16" alt=
+              "Bookmark and Share" style="border:0" /></a><script type="text/javascript" src=
+              "http://s7.addthis.com/js/200/addthis_widget.js">
+</script> <!-- AddThis Button END -->
+            </li>
+          </ol><!--<p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img src=
+      "http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" /></a><a href=
+      "http://validator.w3.org/check?uri=referer"><img src=
+      "http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31"
+      width="88" /></a></p>-->
+        </fieldset>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
