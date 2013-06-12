@@ -1,0 +1,218 @@
+body {
+font-size : 16px;
+font-family : 'Ubuntu', Helvetica, Verdana, sans-serif;
+background-color : #ffffff;
+margin-left : auto;
+margin-right : auto;
+}
+p {
+text-align : left;
+}
+.title {
+font-size : 1.5em;
+text-align : center;
+}
+img.title {
+padding-left : 20px;
+}
+.ref {
+font-size : 3em;
+font-weight : bold;
+}
+.gen {
+font-size : 3em;
+font-style : italic;
+}
+.subtitle {
+display : block;
+font-size : 0.7em;
+font-style : italic;
+padding-bottom : 10px;
+}
+h1 {
+position : relative;
+color : green;
+background-color : #e8e8e8;
+}
+h1 span {
+background : url(gradient.png) repeat-x;
+position : absolute;
+display : block;
+width : 100%;
+height : 31px;
+}
+.NCBI {
+color : white;
+background-color : #336799;
+}
+.JGI {
+color : white;
+background-color : #00afc2;
+}
+.GEN {
+color : white;
+background-color : #003366;
+}
+.SILV {
+color : black;
+background-color : silver;
+}
+.UNK {
+color : white;
+background-color : #7e2217;
+}
+.number {
+text-align : right;
+}
+table {
+border-collapse : separate;
+border-spacing : 0 1px;
+}
+table.center {
+margin-left : auto;
+margin-right : auto;
+}
+th {
+border : hidden;
+background-color : #e1e9db;
+}
+td.refgenid {
+border-top : 2px solid white;
+border-bottom : 2px solid white;
+border-left : 4px solid white;
+padding : 5px;
+}
+form fieldset {
+margin-left: -1px;
+background-color : #e1e9db;
+border : none;
+border-top : 1px solid #7b8766;
+border-left : 1px solid #7b8766;
+margin-bottom : 5px;
+padding: none;
+}
+form fieldset.two_a {
+height : 120px;
+}
+form fieldset.three {
+height : 50px;
+}
+form fieldset legend {
+color : #535353;
+background-color : #ead6d6;
+border : none;
+border-top : 1px solid #b0a1a1;
+border-left : 1px solid #b0a1a1;
+}
+form fieldset ol {
+color : #535353;
+margin-top: -5px;
+margin-left : -20px;
+padding-top : 5px;
+padding-bottom : 5px;
+}
+form fieldset li {
+list-style : none;
+margin : auto;
+}
+form label {
+color : #535353;
+}
+form label.italics {
+color : #535353;
+font-style : italic;
+}
+input[readonly] {
+color : gray;
+background-color : #cfdae5;
+}
+input[type="text"], textarea {
+border : 1px solid black;
+}
+.btn {
+display : block;
+position : relative;
+background-color : #aaa;
+padding : 5px;
+color : #fff;
+text-decoration : none;
+}
+.btn * {
+background-image : url(btn2.png);
+background-repeat : no-repeat;
+display : block;
+position : relative;
+}
+.right {
+float : right;
+}
+.btn.green {
+background : #9d4;
+}
+.btn:hover {
+background-color : #a00;
+}
+.btn:active {
+background-color : #444;
+}
+.btn[class] {
+background-image : url(shade.png);
+background-position : bottom;
+}
+.column.form {
+float : left;
+}
+.help_text {
+border-top : 1px solid #7b8766;
+border-left : 1px solid #7b8766;
+color : #535353;
+background-color : #e1e9db;
+margin-top : 10px;
+padding-left : 5px;
+padding-top : 5px;
+font-size: 0.8em;
+}
+.container {
+width : 800px;
+margin-left : auto;
+margin-right : auto;
+}
+.six_hundred {
+width: 600px;
+display: inline-block;
+}
+
+.three_hundred {
+width: 300px;
+}
+
+.two_hundred {
+width: 200px;
+}
+
+a.external span
+{
+position: absolute;
+left: -5000px;
+width: 4000px;
+}
+
+a.external:link
+{
+background: url(external_icon.gif) no-repeat 100% 0;
+padding: 0 20px 0 0;
+}
+
+a.external:visited
+{
+color: purple;
+background: url(external_icon.gif) no-repeat 100% -100px;
+padding: 0 20px 0 0;
+}
+
+a.external:hover
+{
+color: red;
+background: url(external_icon.gif) no-repeat 100% -200px;
+padding: 0 20px 0 0;
+}
